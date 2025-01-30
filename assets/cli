@@ -1,21 +1,3 @@
-## Requirements
-
-## Configuration
-
-1. Sign up to Spotify Web API: https://developer.spotify.com/documentation/web-api/tutorials/getting-started
-2. Create a `.env` file with the following configurations:
-```
-SPOTIFY_CLIENT_ID=
-SPOTIFY_CLIENT_SECRET=
-SPOTIFY_REDIRECT_URI=
-SPOTIFT_SCOPES="playlist-modify-public playlist-modify-private playlist-read-private
-ugc-image-upload"
-SPOTIFY_USERNAME=
-```
-
-## CLI
-
-```
 Spotify Playlist Generator 🪄
 
 Usage:
@@ -26,7 +8,6 @@ Available Commands:
     track       Add track to a spotify playlist
     rtrack      Remove track from a spotify playlist
     magic       Generate spotify playlist with AI [llama2]
-    delete      Delete playlist
     show        Show playlist
     help        Help about any command
 
@@ -37,5 +18,6 @@ Flags:
     -p, --playlist  playlist name
     -t, --track     track name
     -a, --author    author name
+    --public,      defines playlist to public (default: private)
 
 Use "spg [command] --help" for more information about a command.
